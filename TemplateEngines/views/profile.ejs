@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+
+    <style media="screen">
+
+      body
+      {
+        background: skyblue;
+        font-family: verdana;
+        color: #fff;
+        padding: 30px;
+      }
+
+      h1
+      {
+        font-size: 48px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-align: center;
+      }
+
+      h2
+      {
+        font-size: 30px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-align: center;
+      }
+
+      p
+      {
+        font-size: 16px;
+        text-align: center;
+      }
+
+    </style>
+    <meta charset="utf-8">
+
+    <title></title>
+
+  </head>
+
+  <body>
+
+    <h1>welcome NINJAS nr: <%= person %></h1>
+
+    <p> <strong>Age:</strong> <%= data.age %> </p>
+
+    <p> <strong>Job:</strong> <%= data.job %> </p>
+
+    <h2>Hobbies</h2>
+
+    <ul>
+
+      <% data.hobbies.forEach(function(item){ %>
+
+        <li><%= item %></li>
+
+      <% }); %>
+
+
+
+    </ul>
+
+  </body>
+</html>

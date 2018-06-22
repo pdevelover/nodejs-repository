@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+
+        <link rel="stylesheet" href="/assets/styles.css" type="text/css">
+
+        <meta charset="utf-8">
+
+    <title></title>
+
+  </head>
+
+  <body>
+
+    <% include partials/nav.ejs %>
+
+    <h1>welcome NINJAS nr: <%= person %></h1>
+
+    <p> <strong>Age:</strong> <%= data.age %> </p>
+
+    <p> <strong>Job:</strong> <%= data.job %> </p>
+
+    <h2>Hobbies</h2>
+
+    <ul>
+
+      <% data.hobbies.forEach(function(item){ %>
+
+        <li><%= item %></li>
+
+      <% }); %>
+
+
+
+    </ul>
+
+  </body>
+</html>
